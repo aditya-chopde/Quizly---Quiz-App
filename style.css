@@ -1,0 +1,257 @@
+@import url('https://fonts.googleapis.com/css2?family=Madimi+One&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Montserrat", sans-serif;
+}
+
+.hidden {
+    display: none;
+}
+
+body {
+    background: #fff;
+}
+
+.app {
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 10px 36px 0px, rgba(0, 0, 0, 0.06) 0px 0px 0px 1px;
+    background: #fff;
+    width: 90%;
+    max-width: 600px;
+    margin: 50px auto 0;
+    border-radius: 10px;
+    padding: 30px;
+}
+
+.app h1 {
+    font-size: 25px;
+    color: black;
+    font-weight: 600;
+    padding-bottom: 30px;
+}
+
+.quiz {
+    padding: 20px 0;
+}
+
+.quiz h2 {
+    font-size: 18px;
+    color: #001e4d;
+    font-weight: 600;
+}
+
+.btn {
+    background-color: #fff;
+    color: #222;
+    font-weight: 500;
+    width: 100%;
+    border: 1px solid #222;
+    padding: 10px;
+    margin: 10px 0;
+    text-align: left;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: all 0.3s;
+}
+
+.btn:hover:not([disabled]) {
+    background: #222;
+    color: #fff;
+}
+
+.btn:disabled {
+    cursor: no-drop;
+}
+
+.play {
+    background: #001e4d;
+    color: #fff;
+    font-weight: 500;
+    width: 150px;
+    border: 0;
+    padding: 10px;
+    margin: 20px auto 0;
+    border-radius: 4px;
+    cursor: pointer;
+    display: none;
+}
+
+.btn_next {
+    background: #5E5DF0;
+    color: #fff;
+    padding: 10px;
+    margin: 20px auto 0;
+    cursor: pointer;
+    display: none;
+    padding: 12px 45px;
+    border-radius: 10px;
+    border: none;
+    cursor: pointer;
+    transition: all 0.3s;
+    border: 0;
+    font-weight: 700;
+    outline: 0 solid transparent;
+}
+
+.timer_quiz {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+    border-bottom: 1px solid black;
+    cursor: pointer;
+}
+
+.timer {
+    display: flex;
+    flex-direction: row;
+    background: #5E5DF0;
+    padding: 5px 12px;
+    color: #fff;
+    width: 200px;
+    height: 40px;
+    border-radius: 5px;
+}
+
+.timer span {
+    margin-top: 3px;
+}
+
+.timer_sec {
+    background-color: #000;
+    color: #fff;
+    margin-left: 5px;
+    border-radius: 5px;
+    width: 75px;
+    padding: 5px 10px;
+}
+
+#next-btn:hover {
+    background-color: #000;
+}
+
+.correct {
+    background: #9aeabc;
+}
+
+.incorrect {
+    background: #ff9393;
+}
+
+.welcome {
+    padding: 15px 0px;
+    margin: 50px 35px;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: #000;
+}
+
+.heading {
+    text-align: center;
+    padding: 20px;
+    /* margin: px 0px; */
+}
+
+label {
+    padding-right: 20px;
+    padding-left: 10px;
+}
+
+.options {
+    padding-bottom: 10px;
+}
+
+.btn_choice button {
+    margin: 10px 0px;
+    background-color: #5E5DF0;
+    color: #fff;
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+    padding: 12px 45px;
+    border-radius: 10px;
+    border: none;
+    cursor: pointer;
+    transition: all 0.3s;
+    border: 0;
+    font-weight: 700;
+    outline: 0 solid transparent;
+}
+
+.btn_choice button:hover {
+    background-color: #000;
+}
+
+.nav {
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+    padding: 15px 75px;
+    display: flex;
+    flex-direction: row;
+}
+
+.nav h2 {
+    margin: 10px 5px;
+    cursor: pointer;
+}
+
+.btn_play {
+    background: #5E5DF0;
+    color: #fff;
+    padding: 10px;
+    margin: 20px auto 0;
+    cursor: pointer;
+    padding: 12px 45px;
+    border-radius: 10px;
+    border: none;
+    cursor: pointer;
+    transition: all 0.3s;
+    border: 0;
+    font-weight: 700;
+    outline: 0 solid transparent;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+}
+
+.btn_play:hover{
+    background-color: #000;
+}
+
+.nav_links{
+    display: flex;
+    flex-direction: row;
+    padding-left: 25px;
+}
+
+.nav_links{
+    margin-top:15px;
+}
+
+.nav_links li{
+    list-style: none;
+}
+
+.nav_links li a{
+    text-decoration: none;
+    margin: 0px 10px;
+}
+
+.nav_links li a:hover{
+    color: #5E5DF0;
+}
+
+footer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 425px;
+}
+
+@media only screen and (max-width: 600px) {
+    .options {
+        display: flex;
+        flex-direction: column;
+    }
+}

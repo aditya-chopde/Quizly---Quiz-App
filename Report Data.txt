@@ -1,0 +1,15 @@
+HTML: 
+<html>: Defines an HTML document
+<head>: Contains metadata/information for the document
+<title>: Defines a title for the document
+<body>: Defines the document's body
+<h1> to <h6>: Defines HTML headings
+<p>: Defines a paragraph
+<input>: Defines an input control
+<button>: Defines a clickable button
+<label>: Defines a label for an <input> element
+<img>: Defines an image
+<ul>: Defines an unordered list
+<li>: Defines a list item
+
+CSS: 

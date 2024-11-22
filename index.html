@@ -1,0 +1,71 @@
+-<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quizly - Quiz App</title>
+    <link rel="shortcut icon" href="Images/logo.png" type="image/x-icon">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="nav">
+        <img src="Images/logo.png" alt="Logo_quizly" width="50px">
+        <h2>Quizly</h2>
+        <div class="nav_bar">
+            <ul class="nav_links">
+                <li><a href="home.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="contact.html">Contact Us</a></li>
+                <li><a href="index.html">Play Quiz</a></li>
+            </ul>
+        </div>
+    </div>
+    <div class="welcome">
+        <div class="heading" id="h1">
+            <h1>Welcome To Quiz App</h1>
+            <p>Select your Interest</p>
+        </div>
+        <div class="options" id="h2">
+            <span class="option_1"id="h5">
+                <input type="radio" name="quiz_question" id="quiz_choice2" value="2"><label for="Physics">Physics</label>
+                <input type="radio" name="quiz_question" id="quiz_choice3" value="3"><label for="Chemistry">Chemistry</label>
+            </span>
+            <span class="option_2" id="h6">
+                <input type="radio" name="quiz_question" id="quiz_choice4" value="4"><label for="Electronics">Electronics</label>
+                <input type="radio" name="quiz_question" id="quiz_choice5" value="5" checked><label for="C">C</label>
+            </span>
+        </div>
+        <div class="btn_choice" id="h3">
+            <button onclick="choice()">Start Quiz</button>
+        </div>
+     </div>
+    <div class="app hidden" id="h4">
+        <div class="timer_quiz">
+            <div class="timer">
+                <span>Time Left &nbsp;|&nbsp; </span>
+                <div class="timer_sec" id="h7">
+                    <span>00 : </span>
+                    <span id="timer1">00</span>
+                </div>
+            </div>
+            <h1>Quiz</h1>
+        </div>
+        <div class="quiz">
+            <h2 id="question">Question goes here ?</h2>
+            <div id="answer-buttons">
+                <button class="btn">Answer 1</button>
+                <button class="btn">Answer 2</button>
+                <button class="btn">Answer 3</button>
+                <button class="btn">Answer 4</button>
+            </div>
+            <button id="next-btn" class="btn_next">Next</button>
+            <button class="btn_play" id="again" onclick="playAgain()">Play Again </button>
+        </div>
+    </div>
+
+    <footer>
+        <p>2024 &copy; | All rights reserved</p>
+    </footer>
+</body>
+<script src="main.js"></script>
+</html>
